@@ -182,10 +182,36 @@ apps/agentic_rag/.webui_secret_key
 apps/agentic_rag/docs/plans/
 apps/agentic_rag/frontend/docs/plans/
 
-# Playwright MCP files
+# Claude Code / AI tooling
 .playwright-mcp/
 .serena/
-notebooks/episodic/conversations/fsagent_session_0010.md
-notebooks/episodic/tool_outputs/fsagent_session_0010/20260211_221258_arxiv_search_candidates.json
-notebooks/episodic/tool_outputs/fsagent_session_0010/20260211_230704_arxiv_search_candidates.json
+**/.mcp.json
+.claude/
+.cursorrules
+.cursorignore
+.cursorindexingignore
+
+# Test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime / session data
+**/data/sessions/
+
+# Compiled binaries
+apps/agent-reasoning/tui/agent-tui
+
+# Agent-reasoning app specifics
+apps/agent-reasoning/config.yaml
+apps/agent-reasoning/arena_report.md
+apps/agent-reasoning/benchmark_output.txt
+apps/agent-reasoning/simulation_demo.py
+apps/agent-reasoning/benchmarks/charts/
+apps/agent-reasoning/benchmarks/*_results.json
+apps/agent-reasoning/benchmarks/accuracy_full_*.json
+apps/agent-reasoning/benchmarks/accuracy_summary_*.tsv
+
+# Notebook-specific
+notebooks/episodic
 notebooks/config.yaml
